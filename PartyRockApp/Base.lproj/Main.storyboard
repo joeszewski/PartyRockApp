@@ -140,14 +140,42 @@
                                     <constraint firstAttribute="height" constant="220" id="kuO-YE-jZW"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-7T-TwA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LLE-Zf-S6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-jt-OUB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="6TZ-s7-9ej"/>
+                                    <constraint firstAttribute="height" constant="37" id="noH-gs-dEs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackBtnPressed:" destination="L6U-7U-mr1" eventType="touchUpInside" id="FtI-V5-xJi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86399508250000001" green="0.86399508250000001" blue="0.86399508250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3S9-Yx-jY5" firstAttribute="top" secondItem="zdO-9N-0Dj" secondAttribute="top" id="5Jt-rQ-ZAT"/>
                             <constraint firstAttribute="trailing" secondItem="3S9-Yx-jY5" secondAttribute="trailing" id="5iO-h2-Epb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rTq-7T-TwA" secondAttribute="trailing" constant="5" id="9gw-80-JWB"/>
+                            <constraint firstItem="3S9-Yx-jY5" firstAttribute="top" secondItem="BQq-jt-OUB" secondAttribute="bottom" constant="8" id="FeD-0Z-sYR"/>
+                            <constraint firstItem="BQq-jt-OUB" firstAttribute="leading" secondItem="zdO-9N-0Dj" secondAttribute="leadingMargin" id="GRp-IX-gzT"/>
+                            <constraint firstItem="BQq-jt-OUB" firstAttribute="top" secondItem="ytk-RC-Unk" secondAttribute="bottom" id="P95-iS-Mff"/>
+                            <constraint firstItem="rTq-7T-TwA" firstAttribute="top" secondItem="3S9-Yx-jY5" secondAttribute="bottom" constant="50" id="Vhv-Hk-9AC"/>
                             <constraint firstItem="3S9-Yx-jY5" firstAttribute="leading" secondItem="zdO-9N-0Dj" secondAttribute="leading" id="hHH-gX-e01"/>
+                            <constraint firstItem="rTq-7T-TwA" firstAttribute="leading" secondItem="zdO-9N-0Dj" secondAttribute="leadingMargin" constant="5" id="kPp-JW-deD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="rTq-7T-TwA" id="i7s-rf-l6X"/>
+                        <outlet property="webView" destination="3S9-Yx-jY5" id="cSo-ja-vA5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmD-Uo-Ivq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
